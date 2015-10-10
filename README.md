@@ -11,4 +11,7 @@ First build with:
 Then run it with:
 
     $java -jar target/dependency/webapp-runner.jar target/*.war
+    
+Pagina de Inicio
+	http://localhost:8080/tlatoa/    
 

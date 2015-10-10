@@ -41,13 +41,13 @@ public class PermutasSEPRestClient {
                 	String credentials = "permuta" + ":" + "kc.ll#15";
                     request.addHeader("Accept", "application/json");                    
                     request.addHeader("Authorization", "Basic " + 
-                    		new String(Base64.encodeBase64("Test".getBytes())));
+                    		new String(Base64.encodeBase64(credentials.getBytes())));
                 }
             });
             builder.setLogLevel(RestAdapter.LogLevel.FULL);
         }
-
-        restAdapter = builder.build();
+        
+        restAdapter = builder.build(); 
     }
 
     public IPermutasSEPService get() {
